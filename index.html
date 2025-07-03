@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 60-Day Job Preparation Roadmap</h1>
+            <p>Your structured path to landing a great job</p>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress" id="overallProgress"></div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="daysCompleted">0</div>
+                <div>Days Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="avgConfidence">0</div>
+                <div>Avg Confidence</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="projectsBuilt">0</div>
+                <div>Projects Built</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="skillsLearned">0</div>
+                <div>Skills Learned</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn" onclick="exportToExcel()">📊 Export to Excel</button>
+            <button class="btn secondary" onclick="resetProgress()">🔄 Reset Progress</button>
+            <button class="btn secondary" onclick="showTips()">💡 Study Tips</button>
+        </div>
+        
+        <div class="week-selector">
+            <button class="week-btn active" onclick="showWeek(1)">Week 1-2: Foundation</button>
+            <button class="week-btn" onclick="showWeek(2)">Week 3-4: Backend</button>
+            <button class="week-btn" onclick="showWeek(3)">Week 5-6: AI/ML</button>
+            <button class="week-btn" onclick="showWeek(4)">Week 7-8: Projects</button>
+        </div>
+        
+        <div class="phase-overview" id="phaseOverview">
+            <div class="phase-title">Phase 1: Foundation Building (Days 1-14)</div>
+            <div class="phase-description">
+                Build strong fundamentals in React, JavaScript, and basic AI concepts. Focus on creating a solid base before moving to advanced topics.
+            </div>
+            <div class="milestones">
+                <div class="milestone">
+                    <h4>React Mastery</h4>
+                    <p>Components, hooks, state management</p>
+                </div>
+                <div class="milestone">
+                    <h4>AI Basics</h4>
+                    <p>LLMs, prompting, API integration</p>
+                </div>
+                <div class="milestone">
+                    <h4>Interview Prep</h4>
+                    <p>Basic CS concepts, HTTP, REST APIs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="roadmap-grid" id="roadmapGrid">
+            <!-- Days will be populated by JavaScript -->
+        </div>
+        
+        <div class="export-section">
+            <h3>📈 Track Your Progress</h3>
+            <p>Export your daily progress to Excel for detailed analysis and portfolio documentation.</p>
+        </div>
+    </div>
+    
+   <script src="script.js"></script>
+</body>
+</html>
